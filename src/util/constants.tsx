@@ -1,0 +1,1 @@
+export const local_storage_profile_data = 'profile_data'

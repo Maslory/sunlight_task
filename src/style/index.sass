@@ -1,0 +1,105 @@
+@import './fonts'
+
+body 
+  margin: 0
+  position: relative
+  padding: 0
+  z-index: 0
+  font-size: 14px
+  font-family: 'Open Sans' !important
+
+#root
+  position: relative
+  z-index: 1    
+  .MuiTypography-root
+    font-family: 'Open Sans' !important
+
+.header
+  position: relative
+  z-index: 0
+  svg
+    fill: #fff
+  .vertical_line
+    border-left: 0.125em solid #fff
+    height: 1.5em
+    z-index: 2
+    margin-left: 0.5em
+    margin-right: 0.5em
+  
+.top_background
+  z-index: 1
+  width: 100%
+  svg
+    position: absolute
+    top: 0
+    left: 0
+    enable-background: new 0 0 1481 470
+    min-height: 300px
+    max-height: 500px
+    width: 100%
+    .st0
+      fill:url(#SVGID_1_)
+    
+.text
+  color: #fff
+
+.profile_card
+  background: linear-gradient(270deg, #1A78C2 0%, #1A78C2 101.06%)
+
+  .hover_on_button
+    padding: 0.5em
+    padding-bottom: 0.3em
+    transition: 0.5s
+    border-radius: 50%
+
+  .hover_on_button:hover
+    background: #ffffff48
+
+  .hover_on_button:active
+    background: #ffffff96
+
+.block_profile_info
+  flex-direction: column
+
+.flex-all-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+.dialogMsg
+  .MuiDialog-scrollBody
+    overflow-y: hidden !important
+    overflow-x: hidden !important
+  
+.scroll-off
+  .MuiDialog-scrollBody
+    overflow-y: hidden !important
+    overflow-x: hidden !important
+
+.MuiFormLabel-root.Mui-focused
+  color: #359FF4 !important
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline
+  border-color: #359FF4 !important
+
+
+
+@media screen and (max-width: 576px)
+  .dialogMsg
+    .MuiDialog-paper
+      margin: 0 !important
+      margin-top: 78vh !important
+  .adaptive-icon-edit-profile
+    display: none !important
+
+@media screen and (min-width: 768px) 
+  .block_profile_info
+    justify-content: space-around
+    flex-direction: row
+    margin-top: 1em
+    margin-bottom: 1em
+  .vertical_line_in_profile
+    border-left: 1px #CAE7FE solid
+    min-height: 100px
+    min-width: 1px
+
